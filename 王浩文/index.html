@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>chat with me</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+	
+</head>
+<body>
+<div class="mask">
+</div>
+<div class="box">
+  <h1>Withme</h1>
+</div>
+
+<div id="mainbg">
+	<div class="render"></div>
+    <div id="set" class="off"></div>
+    <div id="choosebar">
+			<div class="off" id="in_chat"><p>进入聊天</p></div>
+			<div class="off" id="in_at"><p>进入私聊</p></div>
+            <div class="off" id="in_persen"><p>个人中心</p></div>
+            <div class="off" id="in_more"><p>更多功能</p></div>
+    </div>
+    <div class="plogin" id="login_bg">
+                <div class="login_form">
+                    <form id="loginform" autocomplete="off" name="loginform" action="" method="post" target="_self" style="margin:0px;">
+                        <div class="uinArea" id="uinArea">
+                            <label id="uin_tips" for="u" style="display: block;">用户名:</label>
+                            <div class="inputOuter">
+                            	<span id="u_icon"></span>
+                                <input type="text" class="inputstyle" id="u" name="u" tabindex="1">
+                            </div>
+                        </div>
+                       
+
+                        <div class="pwdArea" id="pwdArea">
+                            <label id="pwd_tips" for="p" style="display: block;">密   码:</label>
+                            <div class="inputOuter">
+                            	<span id="p_icon"></span>
+                                <input type="password" class="inputstyle password" id="p" name="p" maxlength="16" tabindex="2">
+                            </div>
+                        </div>
+                        
+
+                        <div class="submit">
+                            <a hidefocus="true" href="javascript:void(0);">
+                                <input type="button" value="登 录" class="login" align="center" id="login">
+                            </a>  
+                            
+                            <input type="button"  value="注 册" class="login" id="regist">
+                            
+                        </div>
+                    </form>
+                </div>
+    </div>
+</div>
+
+<div class="reg">
+        <div id="abc">
+            <h2>注册</h2> <h1 class="close_btn">×</h1>
+        </div>
+        <form action="" method="post" name="form1" id="form1">
+            <dl>
+                <dt class="title"><h4>帐户基本信息</h4></dt>
+                <dd><span class="title">登录账号：</span><input class="reg_input" name="t_UserName" id="t_UserName" type="text" /><span id="t_UserNameTip" class="onshow"></span></dd>
+                <dd><span class="title">昵称：</span><input class="reg_input" name="iptNickName" id="iptNickName" type="text" /><span id="iptNickNameTip" class="onshow"></span></dd>
+                <dd><span class="title">年龄：</span><input class="reg_input" name="age" id="age" type="text" /><span id="agetip" class="onshow"></span></dd>
+                <dd><span class="title">性别：</span><input type="radio" id="Sex_Man" name="rb_Sex" value="1" checked="CHECKED" /><label for="Sex_Man"> 帅哥</label>
+                                                    <input type="radio" id="Sex_Woman" name="rb_Sex" value="2" /><label for="Sex_Woman"> 美女</label>　
+                                                
+              </dd>
+            </dl>
+            <dl>
+                <dt class="title"><h4>帐户安全设置</h4></dt>
+                <dd><span class="title">登录密码：</span><input class="reg_input" id="t_UserPass" name="t_UserPass" type="password"/><span id="t_UserPassTip" class="onshow"></span></dd>
+                <dd><span class="title">确认登录密码：</span><input class="reg_input" type="password" id="t_RePass" name="t_RePass"/><span id="t_RePassTip" class="onshow"></span></dd>
+                <dd><span class="title">真实姓名：</span><input name="iptName" id="iptName" class="reg_input" type="text" /><span id="iptNameTip" class="onshow"></span></dd>
+                <dd><span class="title">邮箱地址：</span><input class="reg_input" name="t_Email" type="text" id="t_Email"/><span id="t_EmailTip" class="onshow"></span></dd>
+            </dl>
+            <div class="f_reg_but"><input id="regist_con" name="button" type="button" value="免费注册" class="login"/>
+        </form>                              
+</div>
+
+</body>
+</html>

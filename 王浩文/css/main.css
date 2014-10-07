@@ -1,0 +1,339 @@
+#choosebar{
+position: absolute;
+	float: left;
+z-index: 5000;
+top:60px;
+}
+#choosebar>div{
+border:5px solid #2A7F00; 
+text-align: center;
+text-align: middle;
+border-radius: 3px; 
+background: none repeat scroll 0 0 #82C400; 
+width:135px;
+height:60px;
+font-size: 25px;
+color: #FFFFFF;  
+font-weight: 500;
+border-radius: 16px;
+position: relative;
+float: top;
+}
+
+#mainbg {
+	background: url(../img/3.jpg);
+	background-repeat: no-repeat;
+	    background-size:100% 100%;
+margin: 0 auto;
+width: 800px;
+height: 600px;
+position: relative;
+border: 5px groove green;
+}
+#set{
+	width: 50px;
+	height: 50px;
+	border:5px solid green;
+    border-radius: 16px;
+    background-image: url(../img/set.bmp);
+    background-repeat: no-repeat;
+position: absolute;
+float: left;
+z-index: 5000;
+    
+}
+.off{
+border-style: outset;
+}
+.on{
+border-style: outset;
+}
+
+a {
+text-decoration: none;
+}
+.login_button {
+position: absolute;
+left: 0;
+outline: 0;
+}
+
+.inputstyle {
+width: 220px;
+position: relative;
+top: 2px;
+left: 2px;
+height: 18px;
+padding: 11px 0 11px 25px;
+line-height: 18px;
+border: 0;
+background: 0;
+color: #333;
+font-family: Verdana,Tahoma,Arial;
+font-size: 16px;
+}
+
+#u_icon {
+position: relative;
+float: left;
+background: url(../img/user.png) no-repeat;
+    background-size:100% 100%;
+        width: 28px;
+    height: 28px;
+
+}
+#p_icon {
+position: relative;
+float: left;
+background: url(../img/password.png) no-repeat;
+    background-size:100% 100%;
+        width: 28px;
+    height: 28px;
+
+}
+
+.box{
+position: absolute;
+display: none;
+}
+.render{
+position: absolute;
+right: 20px;
+font-size: 40px;
+z-index: 5000;
+}
+
+
+.inputstyle {
+width: 250px;
+height: 25px;
+background: url(../img/input.jpg) no-repeat 0 0;
+    background-size:100% 100%;
+}
+
+.submit {
+position: relative;
+height: 40px;
+top: 6px;
+}
+
+
+.login{
+width: 92px;
+height: 35px;
+line-height: 35px;
+border: 0;
+font-size: 14px;
+font-weight: bold;
+color: #fff;
+background: url(../img/submit.jpg) no-repeat;
+    background-size:100% 100%;
+}
+#login_bg{
+position: absolute;
+right: 150px;
+top:150px;
+}
+#chatroom,#atroom,#morefunction,#persenroom{
+position: absolute;
+width: 800px;
+height: 600px;
+z-index: 2;
+display: none;
+}
+.information{
+position: absolute;
+top:100px;
+width: 180px;
+height: 400px;
+background-color:#72C400; 
+
+}
+#message,#record{
+position: absolute;
+width: 440px;
+height: 375px;
+margin: 25px 0 25px 25px;
+left: 180px;
+
+}
+#messagearea,#recordarea{
+width:435px;
+resize:none;
+
+
+}
+#item,#friend{
+position: absolute;
+width: 130px;
+height: 300px;
+right: 25px;
+top:100px;
+background-color:#72C400; 
+opacity: 0.5;
+}
+
+#send,#send_at{
+position: absolute;
+top:425px;
+left: 205px;
+width: 570px;
+height: 150px;
+}
+#textarea,#textarea_at{
+width:565px;
+heigh:150px;
+resize:none;
+}
+
+#friend_item{
+position: absolute;
+width: 130px;
+height: 460px;
+right: 175px;
+top:80px;
+background-color:#72C400; 
+}
+#persen_message{
+position: absolute;
+width: 395px;
+height: 460px;
+left: 100px;
+top:80px;
+background-color:#327400; 
+}
+
+#change{
+position: absolute;
+right: 25px;
+bottom:5px;
+}
+#confirm{
+position: absolute;
+right: 25px;
+bottom:5px;
+display: none;
+}
+#add_friend{
+position: absolute;
+right: 0px;
+bottom:5px;
+}
+#add_text{
+position: absolute;
+left: 2px;
+bottom:5px;
+width: 100px;
+}
+
+.reg{
+left: 35%;
+top:10px;
+width:440px;
+font-size:14px;
+overflow:hidden;
+position: absolute;
+border:10px double rgb(166, 201, 225);
+background-color: #ffffff;
+z-index: 10000;
+display: none;
+  }
+#abc{
+width: 435px; 
+height: 42px;
+border:2px solid rgb(166, 201, 225);
+}
+#abc>h2{
+    position: relative;
+    float: left;
+        top:-5px;
+}
+#abc>h1{
+    position: relative;
+    top:-10px;
+    float: right;
+}
+.reg dl{
+padding-left:10px; 
+font-size:14px;
+}
+.reg dl dt{
+margin-top:15px
+}
+.reg dl dd{
+padding:3px 0
+}
+.reg .title{
+width:100px; 
+display:inline-block; 
+text-align:right; 
+padding-right:10px;
+}
+.reg_input_pic{
+width:80px;
+}
+.reg_input{
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+border-radius:4px; 
+height:25px;
+}
+
+#regist_con{
+position: relative;
+float: right;
+margin-right: 100px;
+
+}
+.mask{
+position:absolute;
+margin:0;
+padding:0;
+border:none;
+width:100%;
+height:100%;
+background:#333;
+opacity:0.6;
+z-index:9999;
+top:0;
+left:0;
+display: none;
+}
+body{
+position: relative;
+}
+
+#head{
+   width: 100px;
+height: 100px;
+border-radius: 26px;
+position: relative;
+left: 35px;
+}
+
+.information p{
+text-align: center;
+}
+.logout{
+position: absolute;
+right: 15px;
+bottom:196px;
+}
+
+
+.onshow{
+    width: 50px;
+    height: 20px;
+    position: relative;
+background-color: red;
+
+}
+
+#friend_list,#friend_list_copy
+{
+    position: absolute;
+width: 130px;
+height: 260px;
+border: 1pt solid black;
+    overflow:auto;
+}

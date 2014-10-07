@@ -1,0 +1,45 @@
+﻿{% block title %}Augustus的博客{% endblock %}
+ <br>
+ <br> 
+ <br> 
+ <br>
+ <br>
+【个人信息】
+ <br>
+ 姓名：Augustus
+ <br>
+ 专业：电子信息工程
+ <br>
+ 班级：电信1303班
+ <br>
+ 座右铭：只要努力就一定能够做到
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+【文章列表】
+ <br>       
+{% block content_body %}
+<div class="main_body">
+  {% for blog in blogs %}
+    <div class="blog_body">
+      <div class="blog_title">标题：<a href="/detail/?id={{ blog.id }}">{{ blog.caption }}</a></div>
+      <div class="blog_info1">
+        <span class="blog_info1_list">
+          <span class="li_small_1">分类：<a href="" style="color:#000; text-decoration:none;">{{ blog.classification }}</a></span>
+          <span class="li_small_1">发表时间：{{ blog.publish_time|date:"Y-m-d H:i" }}</span> 
+        </span>
+      </div>
+      <div class="blog_info2">
+        <span class="blog_info2_list">
+          <span class="li_small_2">标签：{% for tag in blog.tags.all %}<a href="" style="color:#000; text-decoration:none;">{{ tag.tag_name }}</a>{% endfor %}</span>
+          <div class="blog_description">文章摘要：{{ blog.content }}</div>
+        </span>
+      </div>
+    </div>
+   <br>
+   <br>  
+  {% endfor %}
+  </div>
+  {% endblock %}

@@ -1,0 +1,61 @@
+﻿<html>  
+<head>  
+    <title>Welcome Register New Account</title>  
+</head>  
+<body>  
+  
+ {% if errors %}  
+        <li>  
+  
+            {% for error in errors %}  
+             <p style="color: red;">  
+                Please correct the error: {{error}} below.  
+             </p>  
+              {% endfor %}  
+        </li>  
+    {% endif %}  
+<table>  
+    <form action="" method="post">  
+        <tr>  
+            <td>  
+                <label >Account:</label>  
+            </td>  
+            <td>  
+                <input type = 'text' placeholder="Please input account" name = 'account'>  
+            </td>  
+        </tr>  
+        <tr>  
+            <td>  
+                <label >Password:</label>  
+            </td>  
+            <td>  
+              <input type = 'password' placeholder="Please input password" name = 'password'>  
+            </td>  
+        </tr>  
+         <tr>  
+             <td>  
+                <label >Password:</label>  
+             </td>  
+             <td>  
+                 <input type = 'password' placeholder="Please input password" name ='password2'>  
+             </td>  
+  
+         </tr>  
+         <tr>  
+             <td>  
+                 <label>email:</label>  
+             </td>  
+             <td>  
+                 <input type="email" placeholder="Please input email" name = 'email'>  
+             </td>  
+         </tr>  
+          <tr>  
+  
+              <td>  
+                   <input type = 'submit' placeholder="Login" value="Login">  
+              </td>  
+          </tr>  
+    </form>  
+</table>  
+</body>  
+</html>  

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Welcome login </title>  
+</head>  
+<body>  
+    <p>Account Login </p>  
+  
+    {% if errors %}  
+        <li>  
+            {% for error in errors %}  
+             <p style="color: red;">  
+                Please correct the error: {{error}} below.  
+             </p>  
+              {% endfor %}  
+        </li>  
+    {% endif %}  
+  
+    <form action="" method="post">  
+        <input type = 'text' placeholder="Please input account" name="account">  
+       <br>  
+  
+        <input type = 'password' placeholder="Please input password" name="password">  
+        <br>  
+        <input type = 'submit' placeholder="Login" value="Login">  
+        <br>  
+        <a href="/account/register">register new accout</a>  
+    </form>  
+</body>  
+</html>  
